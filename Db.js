@@ -1,4 +1,5 @@
 const mongoose=require('mongoose');
+require("dotenv").config();
 const clc=require('cli-color');
 
 mongoose.connect(process.env.MONGO_URI).then((res)=>{
